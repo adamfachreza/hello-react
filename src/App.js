@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Header'; // import file Header.js
+import Footer from './function'; // import nama export from nama file.js
+
+// masukin function ke dalam App
+// const Footer = () =>{
+//   return (
+//     <p>ini tampilan footer</p>
+//   )
+// }
+
+// import componen dalam file yang sama
+// function Header(){
+//   return (
+//       <div>
+//       <p>rendering header</p>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header /> {/* function header di atas di masukin ke app biar bisa di munculin */}
+     <h1>Rendering Elements</h1>
+     <Footer />
     </div>
   );
+ 
 }
 
 export default App;
